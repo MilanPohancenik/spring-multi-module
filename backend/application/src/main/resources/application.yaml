@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-multi-module
+
+server:
+  port: 8080
+  forward-headers-strategy: framework
+  servlet:
+    context-path: /spring-multi-module

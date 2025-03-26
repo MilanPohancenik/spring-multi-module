@@ -1,14 +1,14 @@
 package com.pohancenik.springmultimodule.modules.b;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class ChildController {
 
-    @GetMapping("/hello")
+    @GetMapping("/child/b/hello")
     public String sayHello() {
-        return "hello";
+        return "helloB";
     }
     
 }
